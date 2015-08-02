@@ -7,10 +7,6 @@
           "name": "NAMENODE"
         },
         {
-          "name" : "HIVE_SERVER"
-        },
-
-        {
           "name": "RESOURCEMANAGER"
         },
         {
@@ -36,6 +32,9 @@
         },
         {
           "name" : "PIG"
+        },
+        {
+          "name" : "METRICS_COLLECTOR"
         }
         ],
       "cardinality": "1"
@@ -49,9 +48,6 @@
         {
           "name" : "HIVE_SERVER"
         }, 
-        {
-          "name" : "METRICS_COLLECTOR"
-        },
         {
           "name" : "METRICS_MONITOR"
         },
