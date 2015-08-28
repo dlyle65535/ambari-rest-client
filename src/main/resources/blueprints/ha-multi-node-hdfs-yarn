@@ -263,7 +263,7 @@
         },
         "properties" : {
           "io.serializations" : "org.apache.hadoop.io.serializer.WritableSerialization",
-          "ha.zookeeper.quorum" : "%HOSTGROUP::SLAVE_1%:2181,%HOSTGROUP::MASTER_2%:2181,%HOSTGROUP::MASTER_1%:2181",
+          "ha.zookeeper.quorum" : "%HOSTGROUP::MASTER_3%:2181,%HOSTGROUP::MASTER_2%:2181,%HOSTGROUP::MASTER_1%:2181",
           "hadoop.security.key.provider.path" : "",
           "io.file.buffer.size" : "131072",
           "ipc.client.connection.maxidletime" : "30000",
@@ -461,7 +461,7 @@
           "yarn.timeline-service.ttl-enable" : "true",
           "yarn.resourcemanager.scheduler.address" : "%HOSTGROUP::MASTER_1%:8030",
           "yarn.nodemanager.linux-container-executor.resources-handler.class" : "org.apache.hadoop.yarn.server.nodemanager.util.DefaultLCEResourcesHandler",
-          "yarn.resourcemanager.zk-address" : "%HOSTGROUP::MASTER_1%:2181,%HOSTGROUP::MASTER_2%:2181,%HOSTGROUP::SLAVE_1%:2181",
+          "yarn.resourcemanager.zk-address" : "%HOSTGROUP::MASTER_1%:2181,%HOSTGROUP::MASTER_2%:2181,%HOSTGROUP::MASTER_3%:2181",
           "yarn.resourcemanager.state-store.max-completed-applications" : "${yarn.resourcemanager.max-completed-applications}",
           "yarn.nodemanager.bind-host" : "0.0.0.0",
           "yarn.resourcemanager.address" : "%HOSTGROUP::MASTER_1%:8050",
@@ -477,7 +477,7 @@
           "yarn.nodemanager.delete.debug-delay-sec" : "0",
           "yarn.resourcemanager.hostname.rm2" : "%HOSTGROUP::MASTER_2%",
           "yarn.resourcemanager.hostname.rm1" : "%HOSTGROUP::MASTER_1%",
-          "hadoop.registry.zk.quorum" : "%HOSTGROUP::MASTER_1%:2181,%HOSTGROUP::MASTER_2%:2181,%HOSTGROUP::SLAVE_1%:2181",
+          "hadoop.registry.zk.quorum" : "%HOSTGROUP::MASTER_1%:2181,%HOSTGROUP::MASTER_2%:2181,%HOSTGROUP::MASTER_3%:2181",
           "yarn.resourcemanager.am.max-attempts" : "2",
           "yarn.scheduler.maximum-allocation-mb" : "5120",
           "yarn.nodemanager.resource.percentage-physical-cpu-limit" : "80",
@@ -708,7 +708,7 @@
           "dfs.blockreport.initialDelay" : "120",
           "dfs.https.port" : "50470",
           "dfs.client.read.shortcircuit" : "true",
-          "dfs.namenode.shared.edits.dir" : "qjournal://%HOSTGROUP::SLAVE_1%:8485;%HOSTGROUP::MASTER_2%:8485;%HOSTGROUP::MASTER_1%:8485/mycluster",
+          "dfs.namenode.shared.edits.dir" : "qjournal://%HOSTGROUP::MASTER_3%:8485;%HOSTGROUP::MASTER_2%:8485;%HOSTGROUP::MASTER_1%:8485/mycluster",
           "dfs.namenode.rpc-address.mycluster.nn2" : "%HOSTGROUP::MASTER_2%:8020",
           "dfs.namenode.rpc-address.mycluster.nn1" : "%HOSTGROUP::MASTER_1%:8020",
           "dfs.replication.max" : "50",
@@ -909,7 +909,7 @@
       "cardinality" : "1"
     },
     {
-      "name" : "SLAVE_1",
+      "name" : "MASTER_3",
       "configurations" : [ ],
       "components" : [
         {
@@ -946,7 +946,7 @@
       "cardinality" : "1"
     },
     {
-      "name" : "SLAVE_2",
+      "name" : "SLAVE_1",
       "configurations" : [ ],
       "components" : [
         {
