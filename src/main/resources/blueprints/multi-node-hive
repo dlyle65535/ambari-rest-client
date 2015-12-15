@@ -19,9 +19,6 @@
           "name": "ZOOKEEPER_SERVER"
         }, 
         {
-          "name" : "METRICS_MONITOR"
-        },
-        {
           "name" : "WEBHCAT_SERVER"
         },
         {
@@ -52,9 +49,6 @@
           "name" : "HIVE_SERVER"
         }, 
         {
-          "name" : "METRICS_MONITOR"
-        },
-        {
           "name" : "HCAT"
         },
         {
@@ -82,33 +76,6 @@
       "cardinality": "1"
     },
     {
-      "name": "master_3",
-      "components": [
-        {
-          "name" : "METRICS_MONITOR"
-        },
-        {
-          "name" : "METRICS_COLLECTOR"
-        },
-        {
-          "name" : "HIVE_CLIENT"
-        },
-        {
-          "name" : "PIG"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "YARN_CLIENT"
-        }
-       ],
-      "cardinality": "1"
-    },
-    {
       "name": "slave_1",
       "components": [
         {
@@ -131,9 +98,6 @@
         },
         {
           "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name" : "METRICS_MONITOR"
         },
         {
           "name" : "TEZ_CLIENT"
