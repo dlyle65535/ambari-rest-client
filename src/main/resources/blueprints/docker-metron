@@ -24,6 +24,9 @@
           "name" : "APP_TIMELINE_SERVER"
         },
         {
+          "name" : "SUPERVISOR"
+        },
+        {
           "name" : "RESOURCEMANAGER"
         }
       ],
@@ -44,6 +47,9 @@
         },
         {
           "name" : "NIMBUS"
+        },
+        {
+          "name" : "SUPERVISOR"
         },
         {
           "name" : "DRPC_SERVER"
@@ -94,6 +100,9 @@
         },
         {
           "name" : "HBASE_REGIONSERVER"
+        },
+        {
+          "name" : "SUPERVISOR"
         },
         {
           "name" : "HBASE_MASTER"
