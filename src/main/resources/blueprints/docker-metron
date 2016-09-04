@@ -3,7 +3,7 @@
     {
       "hdfs-site" : {
         "properties" : {
-          "dfs.replication" : "1",
+          "dfs.replication" : "1"
           }
       }
     }
