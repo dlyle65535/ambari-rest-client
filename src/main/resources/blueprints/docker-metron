@@ -1,12 +1,92 @@
 {
   "configurations" : [
     {
-      "hdfs-site" : {
-        "properties" : {
-          "dfs.replication" : "1"
+      "hdfs-site": {
+        "properties": {
+          "dfs.replication": "1"
+        }
+      }
+    },
+     {
+        "yarn-site" : {
+          "properties_attributes" : { },
+          "properties" : {
+            "yarn.nodemanager.resource.memory-mb" : "3072",
+            "yarn.scheduler.minimum-allocation-mb" : "1024",
+            "yarn.scheduler.maximum-allocation-mb" : "3072"
           }
+        }
+      },
+      {
+        "yarn-env" : {
+          "properties" : {
+            "apptimelineserver_heapsize" : "1024",
+            "resourcemanager_heapsize" : "1024",
+            "yarn_heapsize" : "1024",
+            "nodemanager_heapsize" : "1024"
+          }
+        }
+      },
+     {
+        "hbase-env" : {
+          "properties" : {
+            "hbase_regionserver_xmn_max" : "512",
+            "hbase_master_heapsize" : "1024",
+            "hbase_regionserver_heapsize" : "1024"
+          }
+        }
+      },
+       {
+          "mapred-site" : {
+            "properties" : {
+              "mapreduce.reduce.java.opts" : "-Xmx1638m",
+              "mapreduce.task.io.sort.mb" : "573",
+              "mapreduce.map.memory.mb" : "1024",
+              "mapreduce.reduce.memory.mb" : "2048",
+              "yarn.app.mapreduce.am.command-opts" : "-Xmx819m -Dhdp.version=${hdp.version}",
+              "mapreduce.map.java.opts" : "-Xmx819m",
+              "yarn.app.mapreduce.am.resource.mb" : "1024"
+            }
+          }
+        },
+    {
+      "hadoop-env" : {
+        "properties" : {
+          "hadoop_heapsize" : "1024",
+          "dtnode_heapsize" : "1024m",
+          "namenode_opt_newsize" : "128m",
+          "namenode_heapsize" : "1024m",
+          "namenode_opt_maxpermsize" : "256m",
+          "nfsgateway_heapsize" : "1024",
+          "namenode_opt_maxnewsize" : "128m",
+          "namenode_opt_permsize" : "128m"
+        }
+      }
+    },
+    {
+      "storm-site" : {
+        "properties" : {
+          "storm.messaging.netty.buffer_size" : "5242880",
+          "topology.transfer.buffer.size" : "1024",
+          "drpc.childopts" : "-Xmx768m _JAAS_PLACEHOLDER",
+          "logviewer.childopts" : "-Xmx128m _JAAS_PLACEHOLDER",
+          "topology.executor.receive.buffer.size" : "1024",
+          "drpc.queue.size" : "128",
+          "topology.executor.send.buffer.size" : "1024",
+          "ui.childopts" : "-Xmx768m _JAAS_PLACEHOLDER",
+          "nimbus.thrift.max_buffer_size" : "1048576"
+        }
+      }
+    },
+    {
+      "mapred-env" : {
+        "properties" : {
+          "jobhistory_heapsize" : "900"
+        }
       }
     }
+
+
   ],
   "host_groups" : [
     {
@@ -116,6 +196,6 @@
   "Blueprints" : {
     "blueprint_name" : "docker-metron",
     "stack_name" : "HDP",
-    "stack_version" : "2.4"
+    "stack_version" : "2.5"
   }
 }
