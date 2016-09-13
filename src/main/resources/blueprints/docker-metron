@@ -12,9 +12,6 @@
     {
       "components" : [
         {
-          "name" : "SECONDARY_NAMENODE"
-        },
-        {
           "name" : "HDFS_CLIENT"
         },
         {
