@@ -99,6 +99,9 @@
           "name" : "HDFS_CLIENT"
         },
         {
+          "name" : "HBASE_CLIENT"
+        },
+        {
           "name" : "HISTORYSERVER"
         },
         {
@@ -134,6 +137,12 @@
         },
         {
           "name" : "DRPC_SERVER"
+        },
+         {
+          "name" : "HDFS_CLIENT"
+        },
+        {
+          "name" : "HBASE_CLIENT"
         }
       ],
       "configurations" : [ ],
@@ -158,10 +167,10 @@
           "name" : "HDFS_CLIENT"
         },
         {
-          "name" : "DATANODE"
+          "name" : "HBASE_CLIENT"
         },
         {
-          "name" : "HBASE_CLIENT"
+          "name" : "DATANODE"
         },
         {
           "name" : "SUPERVISOR"
@@ -187,6 +196,12 @@
         },
         {
           "name" : "HBASE_MASTER"
+        },
+         {
+          "name" : "HDFS_CLIENT"
+        },
+        {
+          "name" : "HBASE_CLIENT"
         }
       ],
       "configurations" : [ ],
