@@ -55,7 +55,7 @@
           "hadoop_heapsize" : "1024",
           "dtnode_heapsize" : "1024m",
           "namenode_opt_newsize" : "128m",
-          "namenode_heapsize" : "1024m",
+          "namenode_heapsize" : "2048m",
           "namenode_opt_maxpermsize" : "256m",
           "nfsgateway_heapsize" : "1024",
           "namenode_opt_maxnewsize" : "128m",
