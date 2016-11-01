@@ -74,7 +74,8 @@
           "drpc.queue.size" : "128",
           "topology.executor.send.buffer.size" : "1024",
           "ui.childopts" : "-Xmx768m _JAAS_PLACEHOLDER",
-          "nimbus.thrift.max_buffer_size" : "1048576"
+          "nimbus.thrift.max_buffer_size" : "1048576",
+          "topology.classpath" : "/etc/hbase/conf:/etc/hadoop/conf"
         }
       }
     },
