@@ -108,6 +108,9 @@
         },
         {
           "name" : "RESOURCEMANAGER"
+        },
+        {
+          "name" : "HBASE_CLIENT"
         }
       ],
       "configurations" : [ ],
@@ -133,6 +136,9 @@
         },
         {
           "name" : "DRPC_SERVER"
+        },
+        {
+          "name" : "HBASE_CLIENT"
         }
       ],
       "configurations" : [ ],
